@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Кирилл Хайленко](https://up.htmlacademy.ru/adaptive-individual/1/user/2314617).
-* Наставник: `Неизвестно`.
+* Наставник: [Ярослав Шевцов](https://htmlacademy.ru/profile/redx).
 
 ---
 
