@@ -26,7 +26,8 @@
         </div>
       </nav>
     </header>
-    <main class="main-container form">
+    <main class="main-container">
+    <section class="form">
       <div class="form__wrapper">
         <h1 class="form__title">Подбор программы</h1>
         <p class="form__description">Заполните анкету, и мы подберем
@@ -35,11 +36,11 @@
             <div class="form__container filter-group">
               <fieldset class="filter-group__field registration-form">
                 <label class="registration-form__label" for="name"><span>Имя*</span></label>
-                <input class="registration-form__value" id="name" type="text" placeholder="Имя питомца" value="Барсик" required>
+                <input class="registration-form__value" id="name" type="text" name="Pet name" placeholder="Имя питомца" value="Барсик" required>
                 <label class="registration-form__label" for="weight"><span>Вес (кг):*</span></label>
-                <input class="registration-form__value" id="weight" type="text" placeholder="Вес питомца" value="7" required>
+                <input class="registration-form__value" id="weight" type="text" name="Pet weight" placeholder="Вес питомца" value="7" required>
                 <label class="registration-form__label" for="age"><span>Возраст (лет):</span></label>
-                <input class="registration-form__value" id="age" type="text" placeholder="Возраст питомца" value="7">
+                <input class="registration-form__value" id="age" type="text" name="Pet age" placeholder="Возраст питомца" value="7">
               </fieldset>
               <fieldset class="filter-group__field program-form">
                 <ul class="program-form__list">
@@ -68,12 +69,50 @@
                 <label class="contacts__label" for="email"><span>E-mail:*</span></label>
                 <input class="contacts__value contacts__value--letter" id="email" type="email" name="email" placeholder="Ваш E-mail" value="kuklachev@gmail.com" required>
                 <label class="contacts__label" for="phone"><span>Телефон:*</span></label>
-                <input class="contacts__value contacts__value--phone" id="phone" type="tel" name="phone" placeholder="Ваш телефон" value="8 (960) 900-60-90" required>
+                <input class="contacts__value contacts__value--telephone" id="phone" type="tel" name="phone" placeholder="Ваш телефон" value="8 (960) 900-60-90" required>
               </fieldset>
-              <fieldset class="filter-group__field"></fieldset>
-              <fieldset class="filter-group__field"></fieldset>
+              <fieldset class="filter-group__field comments">
+                <legend class="comments__title">Комментарий</legend>
+                <label class="comments__label" for="comment">
+                  <textarea class="coomments__field" name="comment" id="comment" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+                </label>
+              </fieldset>
+              <fieldset class="filter-group__field additionally">
+                <legend class="additionally__title">Дополнительно</legend>
+                <ul class="additionally__list">
+                  <li class="additionally__item">
+                    <label class="additionally__label">
+                      <input class="additionally__radio" type="radio" name="additionally-group" value="Sugarless" checked>
+                      <span class="additionally__name">Cахарозаменитель</span>
+                    </label>
+                  </li>
+                  <li class="additionally__item">
+                    <label class="additionally__label">
+                      <input class="additionally__radio" type="radio" name="additionally-group" value="Water">
+                      <span class="additionally__name">Питьевая вода</span>
+                    </label>
+                  </li>
+                  <li class="additionally__item">
+                    <label class="additionally__label">
+                      <input class="additionally__radio" type="radio" name="additionally-group" value="Milk">
+                      <span class="additionally__name">Молоко</span>
+                    </label>
+                  </li>
+                  <li class="additionally__item">
+                    <label class="additionally__label">
+                      <input class="additionally__radio" type="radio" name="additionally-group" value="Vitamins">
+                      <span class="additionally__name">Витамины</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="form__buttons submit">
+              <button class="submit__button button" type="submit">Отправить заявку</button>
+              <span class="submit__note">* — Обязательные поля</span>
             </div>
           </form>
       </div>
+    </section>
     </main>
   </body>
