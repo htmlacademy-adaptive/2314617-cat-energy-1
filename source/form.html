@@ -35,12 +35,15 @@
             <form action="https://echo.htmlacademy.ru/" method="get">
               <div class="form__container filter-group">
                 <fieldset class="filter-group__field registration-form">
-                  <label class="registration-form__label" for="name"><span>Имя*</span></label>
-                  <input class="registration-form__value" id="name" type="text" name="Pet name" placeholder="Имя питомца" value="Барсик" required>
-                  <label class="registration-form__label" for="weight"><span>Вес (кг):*</span></label>
-                  <input class="registration-form__value" id="weight" type="text" name="Pet weight" placeholder="Вес питомца" value="7" required>
-                  <label class="registration-form__label" for="age"><span>Возраст (лет):</span></label>
-                  <input class="registration-form__value" id="age" type="text" name="Pet age" placeholder="Возраст питомца" value="7">
+                  <label class="registration-form__label"><span class="registration-form__name">Имя*</span>
+                    <input class="registration-form__value" type="text" name="Pet name" placeholder="Имя питомца" value="Барсик" required>
+                  </label>
+                  <label class="registration-form__label"><span class="registration-form__name">Вес (кг):*</span>
+                    <input class="registration-form__value" type="text" name="Pet weight" placeholder="Вес питомца" value="7" required>
+                  </label>
+                  <label class="registration-form__label"><span class="registration-form__name">Возраст (лет):</span>
+                    <input class="registration-form__value" type="text" name="Pet age" placeholder="Возраст питомца" value="7">
+                  </label>
                 </fieldset>
                 <fieldset class="filter-group__field program-form">
                   <ul class="program-form__list">
@@ -66,10 +69,12 @@
                 </fieldset>
                 <fieldset class="filter-group__field contacts">
                   <legend class="contacts__title">Контактные данные (владельца кота)</legend>
-                  <label class="contacts__label" for="email"><span>E-mail:*</span></label>
-                  <input class="contacts__value contacts__value--letter" id="email" type="email" name="email" placeholder="Ваш E-mail" value="kuklachev@gmail.com" required>
-                  <label class="contacts__label" for="phone"><span>Телефон:*</span></label>
-                  <input class="contacts__value contacts__value--telephone" id="phone" type="tel" name="phone" placeholder="Ваш телефон" value="8 (960) 900-60-90" required>
+                  <label class="contacts__label"><span class="contacts__name">E-mail:*</span>
+                    <input class="contacts__value contacts__value--letter" type="email" name="email" placeholder="Ваш E-mail" value="kuklachev@gmail.com" required>
+                  </label>
+                  <label class="contacts__label"><span class="contacts__name">Телефон:*</span>
+                    <input class="contacts__value contacts__value--telephone" type="tel" name="phone" placeholder="Ваш телефон" value="8 (960) 900-60-90" required>
+                  </label>
                 </fieldset>
                 <fieldset class="filter-group__field comments">
                   <legend class="comments__title">Комментарий</legend>
