@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Подбор программы питания</title>
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body class="page__body">
       <header class="main-header">
@@ -67,46 +68,46 @@
                     </li>
                   </ul>
                 </fieldset>
-                <fieldset class="filter-group__field contacts">
-                  <legend class="contacts__title">Контактные данные (владельца кота)</legend>
-                  <label class="contacts__label"><span class="contacts__name">E-mail:*</span>
-                    <input class="contacts__value contacts__value--letter" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                <fieldset class="filter-group__field contacts-form">
+                  <legend class="contacts-form__title">Контактные данные (владельца кота)</legend>
+                  <label class="contacts-form__label"><span class="contacts-form__name">E-mail:*</span>
+                    <input class="contacts-form__value contacts-form__value--letter" type="email" name="email" placeholder="kuklachev@gmail.com" required>
                   </label>
-                  <label class="contacts__label"><span class="contacts__name">Телефон:*</span>
-                    <input class="contacts__value contacts__value--telephone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
-                  </label>
-                </fieldset>
-                <fieldset class="filter-group__field comments">
-                  <legend class="comments__title">Комментарий</legend>
-                  <label class="comments__label" for="comment">
-                    <textarea class="comments__field" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+                  <label class="contacts-form__label"><span class="contacts-form__name">Телефон:*</span>
+                    <input class="contacts-form__value contacts-form__value--telephone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
                   </label>
                 </fieldset>
-                <fieldset class="filter-group__field additionally">
-                  <legend class="additionally__title">Дополнительно</legend>
-                  <ul class="additionally__list">
-                    <li class="additionally__item">
-                      <label class="additionally__label">
-                        <input class="additionally__radio" type="radio" name="additionally-group" value="Sugarless" checked>
-                        <span class="additionally__name">Cахарозаменитель</span>
+                <fieldset class="filter-group__field comments-form">
+                  <legend class="comments-form__title">Комментарий</legend>
+                  <label class="comments-form__label" for="comment">
+                    <textarea class="comments-form__field" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+                  </label>
+                </fieldset>
+                <fieldset class="filter-group__field additionally-form">
+                  <legend class="additionally-form__title">Дополнительно</legend>
+                  <ul class="additionally-form__list">
+                    <li class="additionally-form__item">
+                      <label class="additionally-form__label">
+                        <input class="additionally-form__radio" type="radio" name="additionally-group" value="Sugarless" checked>
+                        <span class="additionally-form__name">Cахарозаменитель</span>
                       </label>
                     </li>
-                    <li class="additionally__item">
-                      <label class="additionally__label">
-                        <input class="additionally__radio" type="radio" name="additionally-group" value="Water">
-                        <span class="additionally__name">Питьевая вода</span>
+                    <li class="additionally-form__item">
+                      <label class="additionally-form__label">
+                        <input class="additionally-form__radio" type="radio" name="additionally-group" value="Water">
+                        <span class="additionally-form__name">Питьевая вода</span>
                       </label>
                     </li>
-                    <li class="additionally__item">
-                      <label class="additionally__label">
-                        <input class="additionally__radio" type="radio" name="additionally-group" value="Milk">
-                        <span class="additionally__name">Молоко</span>
+                    <li class="additionally-form__item">
+                      <label class="additionally-form__label">
+                        <input class="additionally-form__radio" type="radio" name="additionally-group" value="Milk">
+                        <span class="additionally-form__name">Молоко</span>
                       </label>
                     </li>
-                    <li class="additionally__item">
-                      <label class="additionally__label">
-                        <input class="additionally__radio" type="radio" name="additionally-group" value="Vitamins">
-                        <span class="additionally__name">Витамины</span>
+                    <li class="additionally-form__item">
+                      <label class="additionally-form__label">
+                        <input class="additionally-form__radio" type="radio" name="additionally-group" value="Vitamins">
+                        <span class="additionally-form__name">Витамины</span>
                       </label>
                     </li>
                   </ul>
