@@ -1,0 +1,297 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+img {
+  object-fit: contain;
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #444444;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/lato/Lato-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+}
+.main-nav__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+.main-footer {
+  background-color: #f2f2f2;
+}
+.main-footer__link {
+  display: block;
+  padding: 40px 96px;
+}
+.main-footer__social {
+  padding: 40px 94px;
+}
+.main-footer__copyright {
+  padding: 40px 20px;
+}
+.additional__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+}
+.additional__name {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+.additional__amount {
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
+.address__partnership {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+.address__location-street {
+  line-height: 20px;
+  font-style: normal;
+}
+.address__info {
+  background-color: #f2f2f2;
+}
+.address__info--light {
+  background-color: #ffffff;
+}
+.advantages__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #000000;
+}
+.background {
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 70%, #ffffff 30%), url("../../img/promo-cat.jpg");
+  background-repeat: no-repeat;
+}
+.button {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #68b738;
+  color: #ffffff;
+  border-style: none;
+  cursor: pointer;
+}
+.catalog__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #000000;
+}
+.catalog__name {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #222222;
+}
+.catalog__link {
+  text-decoration: none;
+}
+.catalog__features-description {
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+}
+.catalog__button {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #68b738;
+  color: #ffffff;
+}
+.additional__button {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #68b738;
+  color: #ffffff;
+}
+.catalog__item:not(:last-child) {
+  margin-bottom: 45px;
+}
+.contacts-form__title {
+  padding: 0;
+  margin-bottom: 35px;
+}
+.comments-form__title {
+  padding: 0;
+  margin-bottom: 35px;
+}
+.example__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #000000;
+}
+.example__number {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.example__text {
+  font-size: 12px;
+  line-height: 12px;
+}
+.example__cost {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.example {
+  background-color: #eaeaea;
+}
+.features__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.features__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+.features__item {
+  background-color: #d9d9d9;
+}
+.form__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #000000;
+}
+.form__description {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.filter-group__field {
+  border: none;
+}
+.more-product__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+.more-product__description {
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+.more-product__button {
+  color: #444444;
+  background-color: #f2f2f2;
+}
+.note__container {
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/note-cat.jpg");
+  background-repeat: no-repeat;
+}
+.note__description {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+.promo {
+  width: 320px;
+}
+.promo__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #ffffff;
+}
+.promo__slogan {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.promo__button {
+  display: block;
+  width: 280px;
+}
+.name-text {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+.title-text {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #000000;
+}
+/*# sourceMappingURL=style.css.map */
