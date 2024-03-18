@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Подбор программы питания</title>
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body class="page__body">
-     <header class="main-header">
+      <header class="main-header">
         <a class="main-header__logo" href="index.html">
           <img src="img/logo-catenergy.svg" width="190" height="38" alt="Питание для котов Cat Energy">
         </a>
@@ -25,7 +26,7 @@
             </ul>
           </div>
         </nav>
-     </header>
+      </header>
     <main class="main-container">
       <section class="form">
         <div class="form__wrapper">
@@ -35,13 +36,13 @@
             <form action="https://echo.htmlacademy.ru/" method="get">
               <div class="form__container filter-group">
                 <fieldset class="filter-group__field registration-form">
-                  <label class="registration-form__label"><span class="registration-form__name">Имя*</span>
+                  <label class="registration-form__label"><span class="registration-form__name name-text">Имя*</span>
                     <input class="registration-form__value" type="text" name="Pet name" placeholder="Барсик" required>
                   </label>
-                  <label class="registration-form__label"><span class="registration-form__name">Вес (кг):*</span>
+                  <label class="registration-form__label"><span class="registration-form__name name-text">Вес (кг):*</span>
                     <input class="registration-form__value" type="text" name="Pet weight" placeholder="7" required>
                   </label>
-                  <label class="registration-form__label"><span class="registration-form__name">Возраст (лет):</span>
+                  <label class="registration-form__label"><span class="registration-form__name name-text">Возраст (лет):</span>
                     <input class="registration-form__value" type="text" name="Pet age" placeholder="7">
                   </label>
                 </fieldset>
@@ -50,63 +51,63 @@
                     <li class="program-form__item">
                       <label class="program-form__label">
                         <input class="program-form__checkbox" type="checkbox" name="Thin" checked>
-                        <span class="program-form__name">Похудение</span>
+                        <span class="program-form__name text-form">Похудение</span>
                       </label>
                     </li>
                     <li class="program-form__item">
                       <label class="program-form__label">
                         <input class="program-form__checkbox" type="checkbox" name="Strong">
-                        <span class="program-form__name">Набор массы</span>
+                        <span class="program-form__name text-form">Набор массы</span>
                       </label>
                     </li>
                     <li class="program-form__item">
                       <label class="program-form__label">
                         <input class="program-form__checkbox" type="checkbox" name="Advice required">
-                        <span class="program-form__name">Не знаю (Нужен ваш совет)</span>
+                        <span class="program-form__name text-form">Не знаю (Нужен ваш совет)</span>
                       </label>
                     </li>
                   </ul>
                 </fieldset>
-                <fieldset class="filter-group__field contacts">
-                  <legend class="contacts__title">Контактные данные (владельца кота)</legend>
-                  <label class="contacts__label"><span class="contacts__name">E-mail:*</span>
-                    <input class="contacts__value contacts__value--letter" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                <fieldset class="filter-group__field contacts-form">
+                  <legend class="contacts-form__title title-text">Контактные данные (владельца кота)</legend>
+                  <label class="contacts-form__label"><span class="contacts-form__name name-text">E-mail:*</span>
+                    <input class="contacts-form__value contacts-form__value--letter" type="email" name="email" placeholder="kuklachev@gmail.com" required>
                   </label>
-                  <label class="contacts__label"><span class="contacts__name">Телефон:*</span>
-                    <input class="contacts__value contacts__value--telephone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
-                  </label>
-                </fieldset>
-                <fieldset class="filter-group__field comments">
-                  <legend class="comments__title">Комментарий</legend>
-                  <label class="comments__label" for="comment">
-                    <textarea class="comments__field" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+                  <label class="contacts-form__label"><span class="contacts-form__name name-text">Телефон:*</span>
+                    <input class="contacts-form__value contacts-form__value--telephone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
                   </label>
                 </fieldset>
-                <fieldset class="filter-group__field additionally">
-                  <legend class="additionally__title">Дополнительно</legend>
-                  <ul class="additionally__list">
-                    <li class="additionally__item">
-                      <label class="additionally__label">
-                        <input class="additionally__radio" type="radio" name="additionally-group" value="Sugarless" checked>
-                        <span class="additionally__name">Cахарозаменитель</span>
+                <fieldset class="filter-group__field comments-form">
+                  <legend class="comments-form__title title-text">Комментарий</legend>
+                  <label class="comments-form__label" for="comment">
+                    <textarea class="comments-form__field" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+                  </label>
+                </fieldset>
+                <fieldset class="filter-group__field additionally-form">
+                  <legend class="additionally-form__title title-text">Дополнительно</legend>
+                  <ul class="additionally-form__list">
+                    <li class="additionally-form__item">
+                      <label class="additionally-form__label">
+                        <input class="additionally-form__radio" type="radio" name="additionally-group" value="Sugarless" checked>
+                        <span class="additionally-form__name name-text">Cахарозаменитель</span>
                       </label>
                     </li>
-                    <li class="additionally__item">
-                      <label class="additionally__label">
-                        <input class="additionally__radio" type="radio" name="additionally-group" value="Water">
-                        <span class="additionally__name">Питьевая вода</span>
+                    <li class="additionally-form__item">
+                      <label class="additionally-form__label">
+                        <input class="additionally-form__radio" type="radio" name="additionally-group" value="Water">
+                        <span class="additionally-form__name name-text">Питьевая вода</span>
                       </label>
                     </li>
-                    <li class="additionally__item">
-                      <label class="additionally__label">
-                        <input class="additionally__radio" type="radio" name="additionally-group" value="Milk">
-                        <span class="additionally__name">Молоко</span>
+                    <li class="additionally-form__item">
+                      <label class="additionally-form__label">
+                        <input class="additionally-form__radio" type="radio" name="additionally-group" value="Milk">
+                        <span class="additionally-form__name name-text">Молоко</span>
                       </label>
                     </li>
-                    <li class="additionally__item">
-                      <label class="additionally__label">
-                        <input class="additionally__radio" type="radio" name="additionally-group" value="Vitamins">
-                        <span class="additionally__name">Витамины</span>
+                    <li class="additionally-form__item">
+                      <label class="additionally-form__label">
+                        <input class="additionally-form__radio" type="radio" name="additionally-group" value="Vitamins">
+                        <span class="additionally-form__name name-text">Витамины</span>
                       </label>
                     </li>
                   </ul>
@@ -127,14 +128,14 @@
             <p class="address__location-street">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </address>
         </div>
-        <iframe class="address__location-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4753.538149484781!2d30.31721488198668!3d59.93850397398413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1709053805266!5m2!1sru!2sru" width="320" height="360" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="address__location-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4753.538149484781!2d30.31721488198668!3d59.93850397398413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1709053805266!5m2!1sru!2sru" width="320" height="360" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <div class="main-footer__logo logo">
+        <a class="main-footer__link logo" href="#">
           <img class="logo__image" src="img/footer-logo-catenergy.svg" width="128" height="24" alt="Логотип Cat Energy">
-        </div>
+        </a>
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
