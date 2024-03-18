@@ -3,7 +3,7 @@
 }
 
 .promo__title {
-  font-family: "Oswald", sans-serif;
+  font-family: @fontsOswald;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
@@ -11,7 +11,7 @@
 }
 
 .promo__slogan {
-  font-family: "Oswald", sans-serif;
+  font-family: @fontsOswald;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
@@ -22,4 +22,9 @@
 .promo__button {
   display: block;
   width: 280px;
+}
+
+.promo__wrapper {
+  background-image: linear-gradient(rgba(rgba(104, 183, 56, 0.85)) 70%, #ffffff 30%), url("../img/promo-cat.jpg");
+  background-repeat: no-repeat;
 }
