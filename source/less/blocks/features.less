@@ -7,6 +7,10 @@
   color: #000000;
 }
 
+.features__description {
+  width: 227px;
+}
+
 .features__link {
   font-family: @fontsOswald;
   font-size: 16px;
@@ -19,4 +23,23 @@
 
 .features__item {
   background-color: #d9d9d9;
+}
+
+.features__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+@media (min-width: @tablet-width) {
+  .features__description {
+    width: 340px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features__list {
+    display: flex;
+    gap: 80px;
+  }
 }

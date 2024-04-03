@@ -17,9 +17,23 @@
 }
 
 .address__info {
-  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  padding: 26px 0 26px;
 }
 
 .address__info--light {
   background-color: #ffffff;
+}
+
+.address__wrapper {
+  background-color: #f2f2f2;
+}
+
+@media (min-width: @tablet-width) {
+  .address__info {
+    display: flex;
+    align-items: center;
+    padding: 60px 70px;
+  }
 }

@@ -1,5 +1,7 @@
 .promo {
-  width: 320px;
+  background-image: linear-gradient(rgba(rgba(104, 183, 56, 0.85)) 70%, #ffffff 30%), url("../img/promo-cat.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 .promo__title {
@@ -8,6 +10,7 @@
   font-weight: 400;
   line-height: 36px;
   color: #ffffff;
+  margin: 27px 0 0 0;
 }
 
 .promo__slogan {
@@ -24,7 +27,16 @@
   width: 280px;
 }
 
-.promo__wrapper {
-  background-image: linear-gradient(rgba(rgba(104, 183, 56, 0.85)) 70%, #ffffff 30%), url("../img/promo-cat.jpg");
-  background-repeat: no-repeat;
+@media (min-width: @tablet-width) {
+  .promo {
+    background: none;
+  }
+
+  .promo__title {
+    color: #000000;
+  }
+
+  .promo__slogan {
+    color: #000000;
+  }
 }

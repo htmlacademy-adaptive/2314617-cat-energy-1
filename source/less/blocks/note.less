@@ -1,10 +1,42 @@
-.note__container {
+.note {
+  width: 280px;
+  min-height: 290px;
+  padding: 59px 61px 43px 59px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/note-cat.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .note__description {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .note {
+    width: 707px;
+    min-height: 200px;
+    padding: 71px 125px 69px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .note__description {
+    width: 161px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .note {
+    width: 245px;
+    min-height: 290px;
+    padding: 59px 61px 43px 59px;
+    align-items: flex-end;
+  }
 }

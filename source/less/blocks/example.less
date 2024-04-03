@@ -32,3 +32,25 @@
 .example {
   background-color: #eaeaea;
 }
+
+.example__slider-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+@media (min-width: @tablet-width) {
+  .example__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example__container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

@@ -1,0 +1,18 @@
+.additionally-form__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+@media (min-width: @tablet-width) {
+  .additionally-form__list {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additionally-form__list {
+    display: flex;
+  }
+}
