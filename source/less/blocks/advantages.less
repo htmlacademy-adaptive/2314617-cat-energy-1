@@ -3,13 +3,80 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
+  margin: 0;
+  margin-top: 20px;
   color: #000000;
 }
 
 .advantages__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   padding: 0;
   margin: 0;
+  margin-top: 40px;
   list-style-type: none;
+}
+
+.advantages__item {
+  position: relative;
+
+  &--first::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: -4px;
+    left: 0;
+    background-image: url("/img/leaf.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #68b738;
+  }
+
+  &--second::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: -4px;
+    left: 0;
+    background-image: url("/img/powder.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #68b738;
+  }
+
+  &--third::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: -4px;
+    left: 0;
+    background-image: url("/img/food.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #68b738;
+  }
+
+  &--fourth::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: -4px;
+    left: 0;
+    background-image: url("/img/alarm.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #68b738;
+  }
+}
+
+.advantages__decription {
+  margin: 0;
+  margin-left: 80px;
 }
 
 @media (min-width: @tablet-width) {
