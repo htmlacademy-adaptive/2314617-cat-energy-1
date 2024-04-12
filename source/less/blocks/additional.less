@@ -26,7 +26,7 @@
   margin: 0;
   padding: 0;
   padding-bottom: 19px;
-  margin-top: 49px;
+  margin-top: 36px;
   list-style-type: none;
   border-bottom: 1px solid #cdcdcd;
 }
@@ -41,7 +41,7 @@
   font-size: 14px;
   line-height: 14px;
   margin: 0;
-  margin-top: 13px;
+  padding-top: 13px;
   color: #444444;
 }
 
@@ -51,9 +51,34 @@
 }
 
 @media (min-width: @tablet-width) {
+  .additional__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 70px;
+  }
+
+  .additional__list {
+    margin-top: 80px;
+    padding-bottom: 28px;
+  }
+
   .additional__item {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .additional__name {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 26px;
+  }
+
+  .additional__amount {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 30px;
   }
 
   .additional__button {
