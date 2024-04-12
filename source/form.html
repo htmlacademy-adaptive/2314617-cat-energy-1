@@ -71,52 +71,58 @@
                     </ul>
                   </fieldset>
                 </div>
-                <fieldset class="filter-group__field contacts-form">
-                  <legend class="contacts-form__title title-text">Контактные данные (владельца кота)</legend>
-                  <div class="contacts-form__wrapper">
-                    <label class="contacts-form__label"><span class="contacts-form__name name-text">E-mail:*</span>
-                      <input class="contacts-form__value contacts-form__value--letter" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                <div class="filter-group__wrapper">
+                  <fieldset class="filter-group__field contacts-form">
+                    <legend class="contacts-form__title title-text">Контактные данные (владельца кота)</legend>
+                    <div class="contacts-form__wrapper">
+                      <label class="contacts-form__label"><span class="contacts-form__name name-text">E-mail:*</span>
+                        <input class="contacts-form__value contacts-form__value--letter" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                      </label>
+                      <label class="contacts-form__label"><span class="contacts-form__name name-text">Телефон:*</span>
+                        <input class="contacts-form__value contacts-form__value--telephone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+                      </label>
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="filter-group__wrapper">
+                  <fieldset class="filter-group__field comments-form">
+                    <legend class="comments-form__title title-text">Комментарий</legend>
+                    <label class="comments-form__label" for="comment">
+                      <textarea class="comments-form__field" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
                     </label>
-                    <label class="contacts-form__label"><span class="contacts-form__name name-text">Телефон:*</span>
-                      <input class="contacts-form__value contacts-form__value--telephone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
-                    </label>
-                  </div>
-                </fieldset>
-                <fieldset class="filter-group__field comments-form">
-                  <legend class="comments-form__title title-text">Комментарий</legend>
-                  <label class="comments-form__label" for="comment">
-                    <textarea class="comments-form__field" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
-                  </label>
-                </fieldset>
-                <fieldset class="filter-group__field additionally-form">
-                  <legend class="additionally-form__title title-text">Дополнительно</legend>
-                  <ul class="additionally-form__list">
-                    <li class="additionally-form__item">
-                      <label class="additionally-form__label">
-                        <input class="additionally-form__checkbox" type="checkbox" name="additionally-group" value="Sugarless" checked>
-                        <span class="additionally-form__name name-text">Cахарозаменитель</span>
-                      </label>
-                    </li>
-                    <li class="additionally-form__item">
-                      <label class="additionally-form__label">
-                        <input class="additionally-form__checkbox" type="checkbox" name="additionally-group" value="Water">
-                        <span class="additionally-form__name name-text">Питьевая вода</span>
-                      </label>
-                    </li>
-                    <li class="additionally-form__item">
-                      <label class="additionally-form__label">
-                        <input class="additionally-form__checkbox" type="checkbox" name="additionally-group" value="Milk">
-                        <span class="additionally-form__name name-text">Молоко</span>
-                      </label>
-                    </li>
-                    <li class="additionally-form__item">
-                      <label class="additionally-form__label">
-                        <input class="additionally-form__checkbox" type="checkbox" name="additionally-group" value="Vitamins">
-                        <span class="additionally-form__name name-text">Витамины</span>
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
+                  </fieldset>
+                </div>
+                <div class="filter-group__wrapper">
+                  <fieldset class="filter-group__field additionally-form">
+                    <legend class="additionally-form__title title-text">Дополнительно</legend>
+                    <ul class="additionally-form__list">
+                      <li class="additionally-form__item">
+                        <label class="additionally-form__label">
+                          <input class="additionally-form__checkbox" type="checkbox" name="additionally-group" value="Sugarless" checked>
+                          <span class="additionally-form__name name-text">Cахарозаменитель</span>
+                        </label>
+                      </li>
+                      <li class="additionally-form__item">
+                        <label class="additionally-form__label">
+                          <input class="additionally-form__checkbox" type="checkbox" name="additionally-group" value="Water">
+                          <span class="additionally-form__name name-text">Питьевая вода</span>
+                        </label>
+                      </li>
+                      <li class="additionally-form__item">
+                        <label class="additionally-form__label">
+                          <input class="additionally-form__checkbox" type="checkbox" name="additionally-group" value="Milk">
+                          <span class="additionally-form__name name-text">Молоко</span>
+                        </label>
+                      </li>
+                      <li class="additionally-form__item">
+                        <label class="additionally-form__label">
+                          <input class="additionally-form__checkbox" type="checkbox" name="additionally-group" value="Vitamins">
+                          <span class="additionally-form__name name-text">Витамины</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                </div>
               </div>
               <div class="form__buttons submit">
                 <button class="submit__button button" type="submit">Отправить заявку</button>

@@ -34,9 +34,26 @@
 }
 
 @media (min-width: @tablet-width) {
+  .address__wrapper {
+    margin: 0;
+  }
+
   .address__info {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 60px 70px;
+    padding: 60px 40px;
+  }
+
+  .address__partnership {
+    font-size: 20px;
+    line-height: 26px;
+    width: 163px;
+  }
+
+  .address__location-street {
+    font-size: 16px;
+    width: 157px;
+    text-align: right;
   }
 }

@@ -10,13 +10,20 @@
 
 .additionally-form__title {
   padding: 0;
-  padding-top: 23px;
+}
+
+.additionally-form__checkbox {
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
   .additionally-form__list {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
+    column-gap: 0;
+    row-gap: 32px;
+    width: 550px;
+    margin-top: 57px;
   }
 }
 
