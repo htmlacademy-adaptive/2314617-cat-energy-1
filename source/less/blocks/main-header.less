@@ -2,6 +2,11 @@
   display: block;
 }
 
+.main-header__image {
+  padding: 13px 0 14px 0;
+  box-sizing: content-box;
+}
+
 @media (min-width: @tablet-width) {
   .main-header {
     display: flex;
@@ -14,5 +19,10 @@
   .main-header {
     justify-content: space-between;
     gap: 15px;
+    padding-top: 55px;
+  }
+
+  .main-header__image {
+    padding: 0;
   }
 }

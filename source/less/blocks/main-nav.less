@@ -81,11 +81,6 @@
   position: static;
 }
 
-.main-header__image {
-  padding: 13px 0 14px 0;
-  box-sizing: content-box;
-}
-
 .main-nav--closed .main-nav__wrapper {
   display: none;
 }
@@ -103,5 +98,12 @@
 
   .main-nav__toggle {
     display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__item {
+    padding: 0;
+    border: none;
   }
 }
