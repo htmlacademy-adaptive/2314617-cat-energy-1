@@ -21,56 +21,32 @@
 .advantages__item {
   position: relative;
 
-  &--first::before {
+  &::before {
     content: "";
     position: absolute;
     width: 60px;
     height: 60px;
     top: -4px;
     left: 0;
-    background-image: url("/img/leaf.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-color: #68b738;
+  }
+
+  &--first::before {
+    background-image: url("../img/leaf.svg");
   }
 
   &--second::before {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    top: -4px;
-    left: 0;
-    background-image: url("/img/powder.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #68b738;
+    background-image: url("../img/powder.svg");
   }
 
   &--third::before {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    top: -4px;
-    left: 0;
-    background-image: url("/img/food.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #68b738;
+    background-image: url("../img/food.svg");
   }
 
   &--fourth::before {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    top: -4px;
-    left: 0;
-    background-image: url("/img/alarm.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #68b738;
+    background-image: url("../img/alarm.svg");
   }
 }
 
@@ -91,25 +67,7 @@
   .advantages__item {
     padding: 151px 26px 57px 0;
 
-    &--first::before {
-      width: 80px;
-      height: 80px;
-      top: 31px;
-    }
-
-    &--second::before {
-      width: 80px;
-      height: 80px;
-      top: 31px;
-    }
-
-    &--third::before {
-      width: 80px;
-      height: 80px;
-      top: 31px;
-    }
-
-    &--fourth::before {
+    &::before {
       width: 80px;
       height: 80px;
       top: 31px;

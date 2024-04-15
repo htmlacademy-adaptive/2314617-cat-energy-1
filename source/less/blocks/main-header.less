@@ -17,9 +17,25 @@
 
 @media (min-width: @desktop-width) {
   .main-header {
+    position: relative;
     justify-content: space-between;
     gap: 15px;
     padding-top: 55px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      min-height: 493px;
+      background-image: url("../img/background-cat.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      background-color: #63a73a;
+      z-index: -1;
+    }
   }
 
   .main-header__image {
