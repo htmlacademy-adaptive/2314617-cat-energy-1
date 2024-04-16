@@ -231,9 +231,24 @@ img {
 }
 @media (min-width: 1440px) {
   .main-header {
+    position: relative;
     justify-content: space-between;
     gap: 15px;
     padding-top: 55px;
+  }
+  .main-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    min-height: 493px;
+    background-image: url("../img/background-cat.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-color: #63a73a;
+    z-index: -1;
   }
   .main-header__image {
     padding: 0;
@@ -330,6 +345,9 @@ img {
   .main-nav__item {
     padding: 0;
     border: none;
+  }
+  .main-nav__link {
+    color: #ffffff;
   }
 }
 .main-footer {
@@ -593,53 +611,28 @@ img {
 .advantages__item {
   position: relative;
 }
-.advantages__item--first::before {
+.advantages__item::before {
   content: "";
   position: absolute;
   width: 60px;
   height: 60px;
   top: -4px;
   left: 0;
-  background-image: url("/img/leaf.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: #68b738;
+}
+.advantages__item--first::before {
+  background-image: url("../img/leaf.svg");
 }
 .advantages__item--second::before {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  top: -4px;
-  left: 0;
-  background-image: url("/img/powder.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #68b738;
+  background-image: url("../img/powder.svg");
 }
 .advantages__item--third::before {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  top: -4px;
-  left: 0;
-  background-image: url("/img/food.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #68b738;
+  background-image: url("../img/food.svg");
 }
 .advantages__item--fourth::before {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  top: -4px;
-  left: 0;
-  background-image: url("/img/alarm.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #68b738;
+  background-image: url("../img/alarm.svg");
 }
 .advantages__decription {
   margin: 0;
@@ -656,22 +649,7 @@ img {
   .advantages__item {
     padding: 151px 26px 57px 0;
   }
-  .advantages__item--first::before {
-    width: 80px;
-    height: 80px;
-    top: 31px;
-  }
-  .advantages__item--second::before {
-    width: 80px;
-    height: 80px;
-    top: 31px;
-  }
-  .advantages__item--third::before {
-    width: 80px;
-    height: 80px;
-    top: 31px;
-  }
-  .advantages__item--fourth::before {
+  .advantages__item::before {
     width: 80px;
     height: 80px;
     top: 31px;
@@ -1144,7 +1122,7 @@ img {
   height: 12px;
   top: 2px;
   left: 102px;
-  background-image: url("/img/arrow.svg");
+  background-image: url("../img/arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1175,7 +1153,7 @@ img {
   height: 50px;
   top: 21px;
   left: 27px;
-  background-image: url("/img/cat-slim.svg");
+  background-image: url("../img/cat-slim.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1201,7 +1179,7 @@ img {
   height: 28px;
   top: 35px;
   left: 13px;
-  background-image: url("/img/cat-pro.svg");
+  background-image: url("../img/cat-pro.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
