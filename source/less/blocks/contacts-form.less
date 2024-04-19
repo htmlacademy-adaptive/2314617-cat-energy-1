@@ -1,6 +1,12 @@
+.contacts-form__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 35px;
+}
+
 .contacts-form__title {
   padding: 0;
-  margin-bottom: 35px;
 }
 
 @media (min-width: @tablet-width) {
@@ -8,11 +14,15 @@
     display: flex;
     flex-direction: column;
   }
+
+  .contacts-form__wrapper {
+    margin-top: 76px;
+    gap: 20px;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .contacts-form {
+  .contacts-form__wrapper {
     flex-direction: row;
-    gap: 81px;
   }
 }

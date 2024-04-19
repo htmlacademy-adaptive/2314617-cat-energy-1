@@ -3,22 +3,22 @@
 }
 
 .main-footer__link {
-  display: block;
-  padding: 0 76px 40px;
-}
-
-.main-footer__social {
-  padding: 0 74px 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   padding: 40px 0 40px;
 }
 
 @media (min-width: @tablet-width) {
   .main-footer__wrapper {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     padding: 55px 0 55px;
   }

@@ -1,11 +1,26 @@
+.filter-group__wrapper {
+  margin-top: 24px;
+}
+
 .filter-group__field {
+  margin: 0;
   padding: 0;
   border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .filter-group__wrapper {
+    margin-top: 65px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .filter-group__container {
     display: flex;
     gap: 80px;
+  }
+
+  .filter-group__wrapper {
+    margin-top: 70px;
   }
 }

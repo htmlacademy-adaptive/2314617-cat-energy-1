@@ -1,3 +1,7 @@
+.main-nav {
+  position: relative;
+}
+
 .main-nav__link {
   font-family: @fontsOswald;
   font-size: 20px;
@@ -9,18 +13,101 @@
 }
 
 .main-nav__list {
+  display: block;
+  position: relative;
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
+.main-nav__item {
+  padding: 22px 0 24px 0;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  bottom: calc(100% + 24px);
+  right: 21px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+
+.main-nav--opened .main-nav__toggle {
+  right: 21px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    right: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  position: static;
+}
+
+.main-nav--closed .main-nav__wrapper {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
+  .main-nav--closed .main-nav__wrapper {
+    display: block;
+  }
+
   .main-nav__list {
     display: flex;
     gap: 33px;
+    min-height: 0;
   }
 
   .main-nav__toggle {
     display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__item {
+    padding: 0;
+    border: none;
+  }
+
+  .main-nav__link--bright {
+    color: #ffffff;
   }
 }

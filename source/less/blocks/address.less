@@ -10,9 +10,11 @@
 .address__location-street {
   line-height: 20px;
   font-style: normal;
+  margin: 0;
 }
 
 .address__location-map {
+  display: block;
   width: 100%;
 }
 
@@ -27,13 +29,50 @@
 }
 
 .address__wrapper {
+  margin-top: 32px;
   background-color: #f2f2f2;
 }
 
 @media (min-width: @tablet-width) {
+  .address__wrapper {
+    margin: 0;
+  }
+
   .address__info {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 60px 70px;
+    padding: 60px 40px;
+  }
+
+  .address__partnership {
+    font-size: 20px;
+    line-height: 26px;
+    width: 163px;
+  }
+
+  .address__location-street {
+    font-size: 16px;
+    width: 157px;
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .address {
+    position: relative;
+  }
+
+  .address__info {
+    position: absolute;
+    width: 565px;
+    top: 95px;
+    left: 110px;
+    margin: 0;
+    background-color: #ffffff;
+  }
+
+  .address__location-street {
+    text-align: left;
   }
 }

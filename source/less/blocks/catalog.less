@@ -3,6 +3,8 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
+  margin: 0;
+  margin-top: 27px;
   color: #000000;
 }
 
@@ -12,11 +14,10 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  width: 76px;
+  margin: 0;
+  margin-bottom: 14px;
   color: #222222;
-}
-
-.catalog__link {
-  text-decoration: none;
 }
 
 .catalog__list {
@@ -25,25 +26,95 @@
   gap: 45px;
   padding: 0;
   margin: 0;
+  margin-top: 41px;
   list-style-type: none;
 }
 
+.catalog__item {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+}
+
+.catalog__link {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-decoration: none;
+}
+
 .catalog__features-description {
+  display: flex;
+  justify-content: space-between;
   font-size: 12px;
-  line-height: 12px;
+  line-height: 16px;
+  margin: 0;
   color: #444444;
 }
 
+.catalog__button {
+  display: block;
+  grid-column: 1 / -1;
+  margin-top: 17px;
+}
+
 @media (min-width: @tablet-width) {
+  .catalog__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 54px;
+  }
+
   .catalog__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 60px;
     row-gap: 75px;
+    margin-top: 84px;
+  }
+
+  .catalog__item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0 37px 40px;
+    background-color: #ebebeb;
+  }
+
+  .catalog__name {
+    font-size: 20px;
+    line-height: 24px;
+    width: 135px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .catalog__features-container {
+    margin-top: 20px;
+  }
+
+  .catalog__features-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 21px;
+  }
+
+  .catalog__features-description {
+    font-size: 16px;
+    line-height: 20px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .catalog__button {
+    margin-top: 32px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .catalog__title {
+    margin-top: 74px;
+  }
+
   .catalog__list {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
