@@ -22,20 +22,24 @@
     top: 0;
     right: 0;
     width: 50%;
-    min-height: 493px;
+    min-height: 694px;
     background-image: url("../img/background-cat.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom right;
     background-color: #63a73a;
     z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-cat@2x.jpg");
+    }
   }
 
   .main-header__wrapper {
     position: relative;
     justify-content: space-between;
     gap: 15px;
-    padding-top: 55px;
+    padding-top: 71px;
   }
 
   .main-header__image {
