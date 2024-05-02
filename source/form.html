@@ -11,7 +11,11 @@
       <div class="container">
         <div class="main-header__wrapper">
           <a class="main-header__logo" href="index.html">
-            <img class="main-header__image" src="img/logo-catenergy.svg" width="190" height="38" alt="Питание для котов Cat Energy">
+            <picture>
+              <source media="(min-width: 1440px)" width="202" height="59" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" width="175" height="50" srcset="img/logo-tablet.svg">
+              <img class="main-header__image" width="190" height="38" src="img/logo-catenergy.svg" alt="Питание для котов Cat Energy">
+            </picture>
           </a>
           <nav class="main-nav main-nav--closed main-nav--nojs">
             <button class="main-nav__toggle burger" type="button"><span class="visually-hidden">Открыть меню</span></button>

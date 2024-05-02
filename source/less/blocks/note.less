@@ -6,10 +6,14 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/note-cat.jpg");
+  background-image: url("../img/note-cat.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/note-cat@2x.jpg");
+  }
 }
 
 .note__description {
@@ -29,6 +33,11 @@
     padding: 71px 125px 69px;
     flex-direction: row;
     justify-content: flex-end;
+    background-image: url("../img/note-cat-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/note-cat-tablet@2x.jpg");
+    }
   }
 
   .note__description {
@@ -44,6 +53,11 @@
     margin: 0;
     padding: 42px 43px;
     align-items: flex-end;
+    background-image: url("../img/note-cat.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/note-cat@2x.jpg");
+    }
   }
 
   .note__description {
