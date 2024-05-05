@@ -62,6 +62,8 @@
     column-gap: 137px;
     row-gap: 37px;
     margin-top: 32px;
+    margin-bottom: 47px;
+    counter-reset: numbers;
   }
 
   .advantages__item {
@@ -71,6 +73,21 @@
       width: 80px;
       height: 80px;
       top: 31px;
+    }
+
+    &::after {
+      content: counter(numbers);
+      counter-increment: numbers;
+      font-family: @fontsOswald;
+      font-size: 280px;
+      font-weight: 400;
+      line-height: 1;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
+      min-width: 134px;
+      color: #f2f2f2;
     }
   }
 

@@ -7,18 +7,70 @@
 }
 
 .registration-form__value {
+  font-family: @fontsOswald;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
   margin: 0;
-  padding: 0;
+  padding: 14px 15px;
+  color: #444444;
+  border: 1px solid #e7e7e7;
+
+  &--name {
+    min-width: 229px;
+  }
+
+  &--weight {
+    min-width: 207px;
+  }
+}
+
+.registration-form__name {
+  margin-right: 9px;
 }
 
 @media (min-width: @tablet-width) {
   .registration-form {
     margin-top: 66px;
   }
+
+  .registration-form__name {
+    margin-right: 13px;
+  }
+
+  .registration-form__value {
+    font-size: 20px;
+    padding: 11px 20px;
+
+    &--name {
+      min-width: 564px;
+    }
+
+    &--weight {
+      min-width: 536px;
+    }
+
+    &--age {
+      min-width: 495px;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
   .registration-form {
     width: 100%;
+    gap: 15px;
+  }
+
+  .registration-form__value--name {
+    min-width: 490px;
+  }
+
+  .registration-form__value--weight {
+    min-width: 463px;
+  }
+
+  .registration-form__value--age {
+    min-width: 421px;
   }
 }
