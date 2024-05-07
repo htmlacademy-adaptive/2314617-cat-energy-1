@@ -5,6 +5,10 @@
   margin-top: 35px;
 }
 
+.contacts-form__label {
+  position: relative;
+}
+
 .contacts-form__title {
   padding: 0;
 }
@@ -31,10 +35,21 @@
   }
 }
 
+.contacts-form__icon {
+  position: absolute;
+  top: 13px;
+  right: 12px;
+}
+
 @media (min-width: @tablet-width) {
   .contacts-form {
     display: flex;
     flex-direction: column;
+  }
+
+  .contacts-form__wrapper {
+    margin-top: 76px;
+    gap: 20px;
   }
 
   .contacts-form__name {
@@ -54,9 +69,9 @@
     }
   }
 
-  .contacts-form__wrapper {
-    margin-top: 76px;
-    gap: 20px;
+  .contacts-form__icon {
+    top: 16px;
+    right: 14px;
   }
 }
 
@@ -67,5 +82,9 @@
 
   .contacts-form__value--email {
     min-width: 493px;
+  }
+
+  .contacts-form__icon {
+    right: 16px;
   }
 }
