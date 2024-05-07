@@ -47,32 +47,32 @@
                 <div class="filter-group__container">
                   <fieldset class="filter-group__field registration-form">
                     <label class="registration-form__label"><span class="registration-form__name name-text">Имя:*</span>
-                      <input class="registration-form__value" type="text" name="Pet name" placeholder="Барсик" required>
+                      <input class="registration-form__value registration-form__value--name" type="text" name="Pet name" placeholder="Барсик" required>
                     </label>
                     <label class="registration-form__label"><span class="registration-form__name name-text">Вес (кг):*</span>
-                      <input class="registration-form__value" type="text" name="Pet weight" placeholder="7" required>
+                      <input class="registration-form__value registration-form__value--weight" type="text" name="Pet weight" placeholder="7" required>
                     </label>
                     <label class="registration-form__label"><span class="registration-form__name name-text">Возраст (лет):</span>
-                      <input class="registration-form__value" type="text" name="Pet age" placeholder="7">
+                      <input class="registration-form__value registration-form__value--age" type="text" name="Pet age" placeholder="7">
                     </label>
                   </fieldset>
                   <fieldset class="filter-group__field program-form">
                     <ul class="program-form__list">
                       <li class="program-form__item">
                         <label class="program-form__label">
-                          <input class="program-form__checkbox" type="radio" name="Thin" checked>
+                          <input class="program-form__radio" type="radio" name="program-group" value="Thin" checked>
                           <span class="program-form__name name-text">Похудение</span>
                         </label>
                       </li>
                       <li class="program-form__item">
                         <label class="program-form__label">
-                          <input class="program-form__checkbox" type="radio" name="Strong">
+                          <input class="program-form__radio" type="radio" name="program-group" value="Strong">
                           <span class="program-form__name name-text">Набор массы</span>
                         </label>
                       </li>
                       <li class="program-form__item">
                         <label class="program-form__label">
-                          <input class="program-form__checkbox" type="radio" name="Advice required">
+                          <input class="program-form__radio" type="radio" name="program-group" value="Advice required">
                           <span class="program-form__name name-text">Не знаю (Нужен ваш совет)</span>
                         </label>
                       </li>
@@ -84,7 +84,7 @@
                     <legend class="contacts-form__title title-text">Контактные данные (владельца кота)</legend>
                     <div class="contacts-form__wrapper">
                       <label class="contacts-form__label"><span class="contacts-form__name name-text">E-mail:*</span>
-                        <input class="contacts-form__value contacts-form__value--letter" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                        <input class="contacts-form__value contacts-form__value--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
                       </label>
                       <label class="contacts-form__label"><span class="contacts-form__name name-text">Телефон:*</span>
                         <input class="contacts-form__value contacts-form__value--telephone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
