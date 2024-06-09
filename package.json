@@ -28,7 +28,7 @@
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
     "start": "gulp",
-    "test": "gulp build"
+    "test": "gulp svg"
   },
   "browserslist": [
     "last 2 versions",
