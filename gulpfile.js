@@ -93,6 +93,12 @@ const svg = () => {
     .pipe(gulp.dest('build/img'));
 }
 
+const svgOptimise = () => {
+  return gulp.src('source/img/**/*.svg')
+    .pipe(svgo())
+    .pipe(gulp.dest('build/img'));
+}
+
 // Copy
 
 const copy = (done) => {
@@ -137,6 +143,7 @@ export const build = gulp.series(
     styles,
     html,
     scripts,
+    svgOptimise,
     svg,
     createWebp
   ),
@@ -152,6 +159,7 @@ export default gulp.series(
     styles,
     html,
     scripts,
+    svgOptimise,
     svg,
     createWebp
   ),
