@@ -60,19 +60,22 @@
                     <ul class="program-form__list">
                       <li class="program-form__item">
                         <label class="program-form__label">
-                          <input class="program-form__radio" type="radio" name="program-group" value="Thin" checked>
+                          <input class="program-form__radio visually-hidden" type="radio" name="program-group" value="Thin" checked>
+                          <span class="program-form__custom-radio"></span>
                           <span class="program-form__name name-text">Похудение</span>
                         </label>
                       </li>
                       <li class="program-form__item">
                         <label class="program-form__label">
-                          <input class="program-form__radio" type="radio" name="program-group" value="Strong">
+                          <input class="program-form__radio visually-hidden" type="radio" name="program-group" value="Strong">
+                          <span class="program-form__custom-radio"></span>
                           <span class="program-form__name name-text">Набор массы</span>
                         </label>
                       </li>
                       <li class="program-form__item">
                         <label class="program-form__label">
-                          <input class="program-form__radio" type="radio" name="program-group" value="Advice required">
+                          <input class="program-form__radio visually-hidden" type="radio" name="program-group" value="Advice required">
+                          <span class="program-form__custom-radio"></span>
                           <span class="program-form__name name-text">Не знаю (Нужен ваш совет)</span>
                         </label>
                       </li>
@@ -81,7 +84,7 @@
                 </div>
                 <div class="filter-group__wrapper">
                   <fieldset class="filter-group__field contacts-form">
-                    <legend class="contacts-form__title title-text">Контактные данные (владельца кота)</legend>
+                    <legend class="contacts-form__title title-text title-line">Контактные данные (владельца кота)</legend>
                     <div class="contacts-form__wrapper">
                       <label class="contacts-form__label"><span class="contacts-form__name name-text">E-mail:*</span>
                         <input class="contacts-form__value contacts-form__value--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
@@ -100,38 +103,42 @@
                 </div>
                 <div class="filter-group__wrapper">
                   <fieldset class="filter-group__field comments-form">
-                    <legend class="comments-form__title title-text">Комментарий</legend>
+                    <legend class="comments-form__title title-text title-line">Комментарий</legend>
                     <label class="comments-form__label" for="comment">
-                      <textarea class="comments-form__field" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+                      <textarea class="comments-form__field" name="comment" id="comment" cols="35" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
                     </label>
                   </fieldset>
                 </div>
                 <div class="filter-group__wrapper">
                   <fieldset class="filter-group__field additionally-form">
-                    <legend class="additionally-form__title title-text">Дополнительно</legend>
+                    <legend class="additionally-form__title title-text title-line">Дополнительно</legend>
                     <ul class="additionally-form__list">
                       <li class="additionally-form__item">
                         <label class="additionally-form__label">
-                          <input class="additionally-form__checkbox" type="checkbox" name="additionally-group" value="Sugarless" checked>
-                          <span class="additionally-form__name name-text">Cахарозаменитель</span>
+                          <input class="additionally-form__checkbox visually-hidden" type="checkbox" name="additionally-group" value="Sugarless" checked>
+                            <span class="additionally-form__custom-checkbox"></span>
+                            <span class="additionally-form__name name-text">Cахарозаменитель</span>
                         </label>
                       </li>
                       <li class="additionally-form__item">
                         <label class="additionally-form__label">
-                          <input class="additionally-form__checkbox" type="checkbox" name="additionally-group" value="Water">
-                          <span class="additionally-form__name name-text">Питьевая вода</span>
+                          <input class="additionally-form__checkbox visually-hidden" type="checkbox" name="additionally-group" value="Water">
+                            <span class="additionally-form__custom-checkbox"></span>
+                            <span class="additionally-form__name name-text">Питьевая вода</span>
                         </label>
                       </li>
                       <li class="additionally-form__item">
                         <label class="additionally-form__label">
-                          <input class="additionally-form__checkbox" type="checkbox" name="additionally-group" value="Milk">
-                          <span class="additionally-form__name name-text">Молоко</span>
+                          <input class="additionally-form__checkbox visually-hidden" type="checkbox" name="additionally-group" value="Milk">
+                            <span class="additionally-form__custom-checkbox"></span>
+                            <span class="additionally-form__name name-text">Молоко</span>
                         </label>
                       </li>
                       <li class="additionally-form__item">
                         <label class="additionally-form__label">
-                          <input class="additionally-form__checkbox" type="checkbox" name="additionally-group" value="Vitamins">
-                          <span class="additionally-form__name name-text">Витамины</span>
+                          <input class="additionally-form__checkbox visually-hidden" type="checkbox" name="additionally-group" value="Vitamins">
+                            <span class="additionally-form__custom-checkbox"></span>
+                            <span class="additionally-form__name name-text">Витамины</span>
                         </label>
                       </li>
                     </ul>
@@ -149,9 +156,9 @@
         <h2 class="visually-hidden">Адрес организации</h2>
         <div class="address__wrapper">
           <div class="address__info container">
-            <span class="address__partnership">Приглашаем к сотрудничеству дилеров!</span>
+            <span class="address__partnership">Приглашаем к&nbsp;сотрудничеству дилеров!</span>
             <address class="address__location">
-              <p class="address__location-street">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+              <p class="address__location-street">ул. Большая Конюшенная, д. 19/8 <span class="address__location-city">Санкт-Петербург</span></p>
             </address>
           </div>
         </div>

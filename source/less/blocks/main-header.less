@@ -1,17 +1,26 @@
+.main-header {
+  border-bottom: 1px solid #d9d9d9;
+}
+
 .main-header__logo {
   display: block;
 }
 
 .main-header__image {
-  padding: 13px 0 14px 0;
+  padding: 12px 0 9px 0;
   box-sizing: content-box;
 }
 
 @media (min-width: @tablet-width) {
+  .main-header {
+    border: none;
+  }
+
   .main-header__wrapper {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 95px;
+    margin-top: 14px;
   }
 }
 
@@ -22,7 +31,7 @@
     top: 0;
     right: 0;
     width: 50%;
-    min-height: 708px;
+    min-height: 694px;
     background-image: url("../img/background-cat.jpg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -39,7 +48,7 @@
     position: relative;
     justify-content: space-between;
     gap: 15px;
-    padding-top: 71px;
+    padding-top: 44px;
   }
 
   .main-header__image {

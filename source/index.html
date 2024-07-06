@@ -21,7 +21,7 @@
             <button class="main-nav__toggle burger" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <div class="main-nav__wrapper">
               <ul class="main-nav__list">
-                <li class="main-nav__item main-nav__item--active">
+                <li class="main-nav__item main-nav__item--active main-nav__item--bright">
                   <a class="main-nav__link main-nav__link--bright">Главная</a>
                 </li>
                 <li class="main-nav__item">
@@ -104,7 +104,7 @@
               <h2 class="example__title">Живой пример</h2>
               <div class="example__flex-block">
                 <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-                  Отличный результат без изнуряющих тренировок!
+                  Отличный результат без&nbsp; изнуряющих тренировок!
                   При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
                 <div class="example__container">
                   <dl class="example__list">
@@ -120,17 +120,25 @@
                   <span class="example__cost">Затраты на питание: <span class="example__sum">15 000 руб.</span></span>
                 </div>
                 <div class="example__slider">
-                  <ul class="example__slider-list">
-                    <li class="example__slider-item example__slider-item--before">
-                      <img class="example__slider-image" src="img/cat-fat.png" width="280" height="256" alt="Толстый кот">
-                    </li>
-                    <li class="example__slider-item example__slider-item--after">
-                      <img class="example__slider-image" src="img/cat-thin.png" width="280" height="256" alt="Худой кот">
-                    </li>
-                  </ul>
+                  <div class="example__slider-item">
+                    <div class="example__slider-range example__slider-range--before">
+                      <picture>
+                        <source media="(min-width: 768px)" width="560" height="512" srcset="img/cat-fat-increased.png 1x, img/cat-fat-increased@2x.png 2x">
+                        <img class="example__slider-image example__slider-image--before" width="280" height="256" src="img/cat-fat.png" srcset="img/cat-fat@2x.png" alt="Толстый кот">
+                      </picture>
+                    </div>
+                    <div class="example__slider-range example__slider-range--after">
+                      <picture>
+                        <source media="(min-width: 768px)" width="560" height="512" srcset="img/cat-thin-increased.png 1x, img/cat-thin-increased@2x.png 2x">
+                        <img class="example__slider-image example__slider-image--after" width="280" height="256" src="img/cat-thin.png" srcset="img/cat-thin@2x.png" alt="Худой кот">
+                      </picture>
+                    </div>
+                  </div>
                   <div class="example__slider-swipe">
-                    <div class="example__slider-toggle">
-                      <span class="visually-hidden">Переместить</span>
+                    <div class="example__slider-bar">
+                      <button class="example__slider-toggle example__slider-toggle--left example__slider-toggle--right" type="button">
+                        <span class="visually-hidden">Переместить</span>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -141,9 +149,9 @@
         <section class="address">
             <h2 class="visually-hidden">Адрес организации</h2>
             <div class="address__info address__info--light container">
-              <span class="address__partnership">Приглашаем к сотрудничеству дилеров!</span>
+              <span class="address__partnership">Приглашаем к&nbsp;сотрудничеству дилеров!</span>
               <address class="address__location">
-                <p class="address__location-street">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+                <p class="address__location-street">ул. Большая Конюшенная, д. 19/8 <span class="address__location-city">Санкт-Петербург</span></p>
               </address>
             </div>
             <iframe class="address__location-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4753.538149484781!2d30.31721488198668!3d59.93850397398413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1709053805266!5m2!1sru!2sru" height="360" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

@@ -1,7 +1,7 @@
 .contacts-form__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 12px;
   margin-top: 35px;
 }
 
@@ -10,11 +10,12 @@
 }
 
 .contacts-form__title {
+  max-width: 200px;
   padding: 0;
 }
 
 .contacts-form__name {
-  margin-right: 13px;
+  margin-right: 9px;
 }
 
 .contacts-form__value {
@@ -37,7 +38,7 @@
 
 .contacts-form__icon {
   position: absolute;
-  top: 13px;
+  top: 17px;
   right: 12px;
 }
 
@@ -47,9 +48,13 @@
     flex-direction: column;
   }
 
+  .contacts-form__title {
+    max-width: 515px;
+  }
+
   .contacts-form__wrapper {
-    margin-top: 76px;
-    gap: 20px;
+    margin-top: 78px;
+    gap: 18px;
   }
 
   .contacts-form__name {
@@ -70,18 +75,24 @@
   }
 
   .contacts-form__icon {
-    top: 16px;
-    right: 14px;
+    top: 19px;
+    right: 10px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .contacts-form__wrapper {
     flex-direction: row;
+    gap: 76px;
+    margin-top: 78px;
   }
 
   .contacts-form__value--email {
     min-width: 493px;
+  }
+
+  .contacts-form__value--telephone {
+    min-width: 472px;
   }
 
   .contacts-form__icon {
