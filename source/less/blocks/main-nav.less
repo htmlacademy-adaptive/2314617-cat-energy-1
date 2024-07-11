@@ -1,5 +1,8 @@
 .main-nav {
-  position: relative;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #ffffff;
 }
 
 .main-nav__link {
@@ -29,7 +32,7 @@
 .main-nav__toggle {
   position: absolute;
   bottom: calc(100% + 20px);
-  right: 1px;
+  right: calc(50% - 138px);
   display: block;
   width: 24px;
   height: 24px;
@@ -50,8 +53,6 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  right: -3px;
-
   &::before,
   &::after {
     content: "";
@@ -73,19 +74,29 @@
   }
 }
 
+.main-nav--closed .main-nav__wrapper {
+  display: none;
+}
+
+.main-nav--nojs {
+  position: static;
+}
+
 .main-nav--nojs .main-nav__toggle {
   display: none;
 }
 
 .main-nav--nojs .main-nav__wrapper {
+  display: block;
   position: static;
 }
 
-.main-nav--closed .main-nav__wrapper {
-  display: none;
-}
-
 @media (min-width: @tablet-width) {
+  .main-nav {
+    position: relative;
+    background: transparent;
+  }
+
   .main-nav--closed .main-nav__wrapper {
     display: block;
   }
